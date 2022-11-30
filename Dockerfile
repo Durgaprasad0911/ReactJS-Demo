@@ -2,10 +2,10 @@
 FROM node:alpine as builder
 
 # set the working dir for container
-WORKDIR /frontend
+WORKDIR /react-app
 
 # copy the json file first
-COPY ./package.json /frontend
+COPY ./package.json /react-app
 
 # install npm dependencies
 RUN npm install
